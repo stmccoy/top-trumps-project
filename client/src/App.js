@@ -15,7 +15,7 @@ function App() {
   }
 
   function chooseDifficulty(event) {
-    setAiDifficulty(event.target.value)
+    setAiDifficulty(parseInt(event.target.value))
     console.log(aiDifficulty)
   }
 
