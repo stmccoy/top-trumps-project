@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      {gameStarted ? <TopTrumpsBox aiDifficulty={aiDifficulty} />
+      {gameStarted ? <TopTrumpsBox aiDifficulty={aiDifficulty} setGameStarted={setGameStarted} />
         :
         <main className="home-page">
           <img className="home-start-button" onClick={handleStartGameButtonClick} src={ttlogo} alt="" />

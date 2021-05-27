@@ -61,21 +61,23 @@ h1 {
   }
 
 .play-button:hover {
-    background-color: rgba(255, 50, 50, 0.986);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 83, 83);
+    color: rgb(14, 14, 14);
     /* box-shadow: 5px 5px 5px rgb(12, 12, 12), */
 }
-  
+
 .play-button {
     cursor: pointer; 
     /* border: solid rgb(54, 54, 54) 3px; */
     color: rgb(14, 14, 14);
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 50, 50, 0.986);
     overflow: hidden; 
     border-radius: 20px;
     padding: 6px;
     /* margin: 30px; */
     font-weight: bolder;
+    border: none;
+    box-shadow: 2px 2px 2px rgb(12, 12, 12)
 }
 
 .custom-select {

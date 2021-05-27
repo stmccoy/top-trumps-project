@@ -7,7 +7,7 @@ import './main-page.css';
 import homerwoohoo from '../components/images/homerwoohoo.png';
 import homeryoulose from '../components/images/homeryoulose.png';
 
-function TopTrumpsBox({ aiDifficulty }) {
+function TopTrumpsBox({ aiDifficulty, setGameStarted}) {
     const [cards, setCards] = useState([]);
     const [playerOneCards, setPlayerOneCards] = useState([])
     const [playerTwoCards, setPlayerTwoCards] = useState([])
@@ -184,7 +184,8 @@ function TopTrumpsBox({ aiDifficulty }) {
 
 
     function playAgainClick() {
-        window.location.reload()
+        setGameStarted(false)
+        // window.location.reload() 
         // SimpsonsService.getCard()
         //     .then(cards => setCards(cards))
         // setDrawArray([])
