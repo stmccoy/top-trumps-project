@@ -1,9 +1,6 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { useState } from 'react';
 import ttlogo from './components/images/ttlogo.png';
 import TopTrumpsBox from './containers/TopTrumpsBox';
-import './App.css';
-
-
 
 function App() {
 
@@ -16,7 +13,6 @@ function App() {
 
   function chooseDifficulty(event) {
     setAiDifficulty(parseInt(event.target.value))
-    console.log(aiDifficulty)
   }
 
   return (
@@ -27,7 +23,7 @@ function App() {
           <img className="home-start-button" onClick={handleStartGameButtonClick} src={ttlogo} alt="" />
           
           <div className="custom-select" >
-            <select className="select" onChange={chooseDifficulty}>
+            <select className="select" onChange={chooseDifficulty} required>
               <option value="default" selected disabled>Select Difficulty</option>
               <option value={2}>Easy</option>
               <option value={1}>Moderate</option>

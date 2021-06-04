@@ -4,10 +4,6 @@ p {
     cursor: pointer;
 }
 
-/* p:hover{
-    background-color: #F3F3F3;
-} */
-
 p:active{
     color: rgb(0, 255, 21);
     cursor: pointer;
@@ -51,7 +47,6 @@ body {
 }
 
 .card__inner[flip='1'] {
-    /* transform: rotateY(180deg); */
     animation: flip 5s 1;
 }
 
@@ -59,9 +54,6 @@ body {
     40% {
         transform: rotateY(180deg);
     }
-    /* 50% {
-        transform: rotate3d(1, 1, 1, 180deg)
-    } */
     60% {
         transform: rotateY(180deg);
     }
@@ -84,7 +76,6 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: 5px 5px 5px rgb(49, 49, 49); 
-    /* box-shadow: 10px 10px 10px rgb(0, 255, 13);  */
 }
 
 .card__face--front-selected{
@@ -92,7 +83,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* box-shadow: 5px 5px 5px rgb(49, 49, 49);  */
     box-shadow: 8px 8px 8px rgb(21, 255, 0);
 }
 
@@ -108,15 +98,11 @@ body {
 }
 
 .card__face--back {
-    /* background-color: var(--light);  */
     transform: rotateY(180deg);
-    /* box-shadow: 5px 5px 5px rgb(0, 255, 13);  */
 }
 
 .card__face--back-selected {
-    /* background-color: var(--light);  */
     transform: rotateY(180deg);
-    /* box-shadow: 5px 5px 5px rgb(0, 255, 13);  */
     box-shadow: 8px 8px 8px rgb(21, 255, 0);
 }
 
@@ -141,7 +127,6 @@ body {
     right: 0;
     bottom: 0;
     z-index: -1;
-    /* border-radius: 0 0 50% 0; */
     background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
 }
 
@@ -166,7 +151,6 @@ body {
 }
 
 .card__body {
-    /* background-color: var(--light); */
     background-color: white;
     padding: 30px;
     display: flex;
@@ -203,9 +187,7 @@ body {
 .card-box {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: center;
-    /* padding-top: 20px; */
     width: 100%;
     height: 100%;
     position: relative;
@@ -216,7 +198,6 @@ body {
 }
 
 .homer-item {
-    /* width:100%; */
     position: absolute;
     justify-content: center;
     align-items: center;
@@ -234,20 +215,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* padding-top: 65px; */
     padding: 10px 10px;
     justify-content: center;
     font-size: 20px;
     background-color: hotpink;
-    /* border: #212121 solid 4px; */
     border: solid 2px hotpink;
     border-radius: 20px;
-    /* bottom: 0%; */
     box-shadow: 8px 8px 8px rgb(255, 159, 207);
     min-width: 550px;
     max-width: 600px;
     width: 55%;
-    /* position: absolute; */
     margin-bottom: 2%;
 
 }
@@ -287,27 +264,11 @@ body {
 }
 
 
-/* .player-1-card {
-    padding-right: 10%;
-    max-width: 100%;
-}
-
-.player-2-card {
-    padding-right: 10%;
-    max-width: 100%;
-} */
-
 .round{
-    /* margin-top: 6%; */
     display: flex;
     justify-content: center;
     text-align: center;
-    /* border: solid white 4px; */
-    /* margin-right: 20px; */
-    /* height:20%; */
     min-width: 100px;
-    /* width: 100px; */
-    /* padding-bottom: 0.5%; */
     padding-top: 15px;
     padding-bottom: 5px;
     border-radius: 25px;
@@ -325,7 +286,6 @@ body {
     color: dodgerblue;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    /* border: solid hotpink 4px 0; */
 }
 
 .roundItems2 {
@@ -347,7 +307,6 @@ body {
     color: dodgerblue;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    /* border: solid hotpink 4px; */
 }
 
 #selected-card{
@@ -355,10 +314,7 @@ body {
 }
 
 .most-lovable-background-colour {
-    /* border: 3px solid #FE4880; */
     background-color:  rgb(0, 255, 13); 
-    /* border-left: 4px solid greenyellow;
-    border-right: 4px solid greenyellow; */
 }
 
 .games-block {
@@ -372,7 +328,6 @@ body {
     padding: 10px;
     text-align: left;
     border: solid white 5px;
-    /* padding: 5px; */
     margin: 20px;
     border-radius: 40px;
 }
@@ -387,6 +342,5 @@ body {
 
 .round-move-display {
     display: flex;
-    /* flex-direction: row; */
     justify-content:center;
 }

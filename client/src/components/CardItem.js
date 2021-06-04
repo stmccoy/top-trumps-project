@@ -1,11 +1,7 @@
-import React, { useState } from 'react';
 import './card.css';
-// import simpsons from './images/simpsonslogo.png';
-// import './test.css';
-
-const CardItem = ({player1Turn, playerWins, card, handleClick, handleClick2, isFlipped, setIsFlipped, chosenAttribute, clicked}) => {
 
 
+const CardItem = ({player1Turn, card, handleClick, chosenAttribute}) => {
 
     return (
         <div>
@@ -39,7 +35,6 @@ const CardItem = ({player1Turn, playerWins, card, handleClick, handleClick2, isF
                     </div>
                     <div className="card__face card__face--back">
                         <h2>Top Trumps</h2>
-                        {/* <img src={simpsons} alt="" /> */}
                     </div>
                 </div>
             </div>

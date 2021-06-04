@@ -1,7 +1,7 @@
 import React from 'react';
 import './card.css';
 import simpsons from './images/simpsonslogo.png';
-// import './test.css';
+
 
 const Player2CardItem = ({ setClicked, player1Turn, card, handleClick, isFlipped, flip, setFlip, chosenAttribute, clicked}) => { 
     
@@ -15,7 +15,6 @@ const Player2CardItem = ({ setClicked, player1Turn, card, handleClick, isFlipped
                         setFlip(0)
                         setClicked(false)}}>
                         <div className={!player1Turn ? 'card__face card__face--front-selected': 'card__face card__face--front'}>
-                            {/* <h2>Top Trumps</h2> */}
                             <img className="card__logo" src={simpsons} alt="" />
                         </div>
                         <div className={!player1Turn ? 'card__face card__face--back-selected': 'card__face card__face--back'}>
