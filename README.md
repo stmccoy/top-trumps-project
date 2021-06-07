@@ -10,6 +10,7 @@ Initial Setup
 3. run 'npm run seeds' in server directory, which seeds mongoDB database
 
 Then
+
 4. run 'npm run server:dev' in server directory
 5. run 'npm start' in client directory 
 
